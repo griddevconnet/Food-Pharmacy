@@ -1,31 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/services", "dest": "/services.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { 
-      "src": "/(.*)", 
-      "dest": "/index.html",
-      "status": 200
-    }
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about/", "destination": "/about.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/services/", "destination": "/services.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/contact/", "destination": "/contact.html" }
   ]
 }
