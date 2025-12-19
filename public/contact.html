@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b7a3b" />
+    <meta name="description" content="Contact Food Pharmacy Ghana to book a free home presentation or request a cooking demonstration." />
+    <title>Contact | Food Pharmacy Ghana</title>
+    <link rel="icon" href="/images/logo3.png" />
+    <link rel="preload" as="image" href="/images/logo3.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <noscript>
+      <div style="padding:16px; margin: 0; background:#0b7a3b; color:white; font-family: system-ui;">
+        This site works best with JavaScript enabled (animations and the booking form helper).
+      </div>
+    </noscript>
+
+    <div id="splash">
+      <div class="splash-inner">
+        <div class="splash-ring" role="status" aria-label="Loading">
+          <img class="splash-logo" src="/images/logo3.png" alt="Food Pharmacy Ghana logo" />
+        </div>
+        <div class="splash-text">Let your food be your medicine</div>
+      </div>
+    </div>
+
+    <div class="bg-ambient" aria-hidden="true">
+      <div class="bg-blob b1"></div>
+      <div class="bg-blob b2"></div>
+      <div class="bg-blob b3"></div>
+    </div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true">
+            <img src="/images/logo3.png" alt="" />
+          </span>
+          <span class="brand-name">Food Pharmacy Ghana</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="#book" class="btn btn-sm">Book Us Now</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="page-hero-inner">
+              <div class="pill reveal">Free home presentation • Book us now</div>
+              <h1 class="reveal">Contact & booking</h1>
+              <p class="lead reveal">Tell us what you need and we’ll respond with the next available dates.</p>
+              <div class="page-hero-actions reveal">
+                <a class="btn" href="#book">Book now</a>
+                <a class="btn btn-ghost" href="services.html">View services</a>
+              </div>
+            </div>
+
+            <aside class="page-sidecard reveal" data-reveal="scale">
+              <div class="page-sidecard-top">
+                <div class="page-sidecard-title">What to expect</div>
+                <div class="page-sidecard-sub">Clear steps. Practical results.</div>
+              </div>
+              <div style="padding: 16px">
+                <ul class="mini-list">
+                  <li>We respond with next available dates</li>
+                  <li>Free home presentation (schedule based)</li>
+                  <li>Nutrition-focused cooking guidance</li>
+                  <li>Family-friendly and practical</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="book">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="reveal">Book us now</h2>
+            <p class="reveal">Request a free home presentation. We’ll respond with the next available dates.</p>
+          </div>
+
+          <div class="booking">
+            <form class="form reveal" id="bookingForm">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone / WhatsApp</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. +233..." required />
+              </div>
+              <div class="field">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="Town / area" required />
+              </div>
+              <div class="field">
+                <label for="interest">What do you need?</label>
+                <select id="interest" name="interest" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Free home presentation</option>
+                  <option>Cooking demonstration</option>
+                  <option>Healthy living coaching</option>
+                  <option>Business opportunity</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us your preferred time/date"></textarea>
+              </div>
+              <button class="btn" type="submit">Send Request</button>
+              <div class="form-note">This form opens your email app with the details.</div>
+            </form>
+
+            <div class="contact reveal">
+              <div class="contact-card">
+                <h3>Headquarters</h3>
+                <p>Tema Community 19, Tema - Ghana</p>
+                <p>Daffodil Street</p>
+                <a class="link" target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Tema%20Community%2019%20Daffodil%20Street">Get directions</a>
+              </div>
+              <div class="contact-card">
+                <h3>Quick actions</h3>
+                <button class="btn btn-ghost" type="button" id="copyPitch">Copy company pitch</button>
+                <a class="btn" id="emailUs" href="#">Email us</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 16px" class="faq">
+            <details class="reveal">
+              <summary>How do I send the booking request?</summary>
+              <p>Fill the form and click “Send Request”. It will open your email app with the details prefilled.</p>
+            </details>
+            <details class="reveal">
+              <summary>What should I include?</summary>
+              <p>Your name, phone/WhatsApp, location, and what you want (presentation, demo, coaching, or opportunity).</p>
+            </details>
+            <details class="reveal">
+              <summary>Where are you located?</summary>
+              <p>Our headquarters is Tema Community 19 (Daffodil Street). We also serve other areas by appointment.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">
+            <div class="footer-badge" aria-hidden="true">
+              <img src="/images/logo3.png" alt="" />
+            </div>
+            <div>
+              <div class="footer-title">Food Pharmacy Ghana</div>
+              <div class="footer-tag">FOOD PHARMACY… Let your food be your medicine.</div>
+            </div>
+          </div>
+
+          <div class="footer-subtext">
+            Health & Nutrition company helping families move away from lifestyle diseases through a revolutionary way of cooking.
+          </div>
+
+          <div class="footer-socials" aria-label="Social links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-head">Contact</div>
+          <div class="footer-text">Tema Community 19, Tema - Ghana<br />Daffodil Street</div>
+          <a class="link" target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Tema%20Community%2019%20Daffodil%20Street">Get directions</a>
+          <div class="footer-actions">
+            <a class="btn btn-sm" href="#book">Book Us Now</a>
+            <a class="btn btn-ghost btn-sm" href="mailto:info@foodpharmacyghana.com">Email</a>
+          </div>
+          <div class="footer-subtext">Email: info@foodpharmacyghana.com</div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-head">At a glance</div>
+          <ul class="footer-mini-list">
+            <li>Founded: 2016</li>
+            <li>Company size: 51–200 employees</li>
+            <li>Type: Privately Held</li>
+            <li>Industry: Health, Wellness & Fitness</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-head">Explore</div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="#book">Book</a>
+            <a href="contact.html#top">Back to top</a>
+          </div>
+          <div class="footer-subtext">Specialties: Health services, business opportunity, healthy living.</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <div>© <span id="year"></span> Food Pharmacy Ghana. All rights reserved.</div>
+          <div class="footer-mini">Tema Community 19 • Health, Wellness & Fitness</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
